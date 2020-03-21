@@ -16,5 +16,5 @@ rates = parsed['rates']
 for currency, rate in rates.items():
     if currency == to:
         conversion = rate * amount
-        print(f'1 {base} = {currency} {rate}')
-        print(f'{round(amount, 2)} {base} = {round(conversion, 2)} {currency}')
+        print(f'1 {base} = {currency} {round(rate, 2)}')
+        print(f'{base} {round(amount, 2)} = {currency} {round(conversion, 2)}')
